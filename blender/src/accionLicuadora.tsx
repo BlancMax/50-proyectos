@@ -6,10 +6,15 @@ const Licuadora = () => {
     const[presionar, setPresionar] = useState(false)
     
     const handleClick =() =>{
-        if (setPresionar === true)
+        if (!presionar){
             sound.play();
+            setPresionar(true);
+            setTimeout(()=>{
+                setPresionar(false);
+            }, 3000);
+        
     }  
-    
+}
     return(
         <div
         id="licuadora"

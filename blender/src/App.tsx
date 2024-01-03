@@ -1,5 +1,6 @@
+import "./App.css";
 
-import Licuadora from './accionLicuadora';
+import SvgComponent from "./SvgComponent";
 
 function App() {
 
@@ -7,7 +8,7 @@ function App() {
 
       <div className="App">
         <h1>Mi aplicación de Licuadora</h1>
-        <Licuadora/>
+        <SvgComponent/>
       </div>
   )
 }

@@ -1,12 +1,10 @@
 import { Button } from './Button';
-import { CardStyle } from './cardStyle';
-import cardContent from './cardContent';
+import CardContent from './cardContent';
 
 const cards = () => {
     return (
         <div>
-            <CardStyle><cardContent/></CardStyle>
-            
+            <CardContent />
             <Button>More</Button>
         </div>
     );

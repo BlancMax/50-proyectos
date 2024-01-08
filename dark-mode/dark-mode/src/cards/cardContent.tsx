@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+
 const CardContainer = styled.div`
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -26,7 +27,7 @@ const CardDescription = styled.p`
   color: #555;
 `;
 
-const cardContent = () => {
+const CardContent = () => {
     const cards = [
         {
             title: 'Card 1',
@@ -35,7 +36,7 @@ const cardContent = () => {
         },
         {
             title: 'Card 1',
-            imageSrc: './AMD_9280X.jpg',
+            imageSrc: './AMD_R9280X.jpg',
             description: '',
         },
         {
@@ -59,4 +60,4 @@ const cardContent = () => {
     );
 };
 
-export default cardContent;
+export default CardContent;

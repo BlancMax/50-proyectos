@@ -12,6 +12,7 @@ const CardContainer = styled.div`
 const CardImage = styled.img`
   width: 100%;
   height: 200px;
+  padding: 5px;
   object-fit: cover;
 `;
 

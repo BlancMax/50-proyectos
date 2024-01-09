@@ -6,12 +6,14 @@ const DarkModeToggle = () => {
     const [darkMode, setDarkMode] = useState (false);
 
     useEffect(() =>{
-        const Button = styled.button`
-        background: tomato;
-        font-size: 1em;
-        margin: 1em;
-        border: 2px solid black;
-        `;
-        
-    })
-}
+        document.body.classList.toggle('dark-mode', darkMode);
+    }, [darkMode]);
+
+    const toggleDarkMode = () => {
+        setDarkMode (!darkMode);
+    };
+
+    return { darkMode, toggleDarkMode };
+};
+
+export default DarkModeToggle;

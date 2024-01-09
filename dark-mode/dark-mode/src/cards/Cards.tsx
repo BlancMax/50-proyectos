@@ -1,14 +1,15 @@
 import { Button } from './Button';
 import CardContent from './cardContent';
-import DarkMode from './DarkMode';
+import DarkModeToggle from './DarkMode';
+
 
 const cards = () => {
-    const {darkMode, toggleDarkMode} = useDarkMode();
-    
+    const {darkMode, toggleDarkMode} = DarkModeToggle();
+
     return (
         <div>
             <CardContent />
-            <Button onClick={DarkMode}>
+            <Button onClick={toggleDarkMode}>
                 {darkMode ? 'Modo Claro' : 'Modo Oscuro'}
             </Button>
         </div>

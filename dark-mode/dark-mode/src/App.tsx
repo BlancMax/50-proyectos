@@ -1,13 +1,18 @@
-import './App.css'
-import Cards from './cards/Cards'
+
+import GlobalStyle from './cards/GlobalStyle'
+import NavBar from './cards/NavBar';
+import { StyledCards } from './cards/StyledCards'
 
 function App() {
   
   return (
     <>
-      <Cards></Cards>
+      <NavBar />
+      <GlobalStyle />
+      <StyledCards />
+
     </>
   )
-}
+};
 
-export default App
+export default App;

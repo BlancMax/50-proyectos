@@ -1,7 +1,7 @@
 import Card from './Card';
 
 
-const CardContent = () => {
+const CardContent = ({ className }) => {
     const cards = [
         {
             title: 'AMD R7260X',
@@ -20,13 +20,13 @@ const CardContent = () => {
         },
     ];
     return (
-        <div>
+        <div className={`${className} contenedor`}>
             {cards.map((item, index) => (
-              <Card title={item.title} 
-              imageSrc={item.imageSrc}
-              description={item.description} 
-              index = {index} />
-      ))}
+                <Card title={item.title}
+                    imageSrc={item.imageSrc}
+                    description={item.description}
+                    index={index} />
+            ))}
         </div>
     );
 };

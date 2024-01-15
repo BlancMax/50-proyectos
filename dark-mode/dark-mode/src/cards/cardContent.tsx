@@ -1,7 +1,11 @@
 import Card from './Card';
 
 
+<<<<<<< HEAD
 const CardContent = ({ className }:{className:string}) => {
+=======
+const CardContent = ({ className }) => {
+>>>>>>> afc33ffb2f53790676e72b12bfd2e050e716922a
     const cards = [
         {
             title: 'AMD R7260X',
@@ -27,7 +31,10 @@ const CardContent = ({ className }:{className:string}) => {
                     description={item.description}
                     index={index} />
             ))}
+<<<<<<< HEAD
 
+=======
+>>>>>>> afc33ffb2f53790676e72b12bfd2e050e716922a
         </div>
     );
 };

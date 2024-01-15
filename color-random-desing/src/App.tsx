@@ -1,4 +1,4 @@
-import Background from './ColorDesing/Background'
+import Background from './ColorDesing.tsx/Background'
 
 function App() {
 

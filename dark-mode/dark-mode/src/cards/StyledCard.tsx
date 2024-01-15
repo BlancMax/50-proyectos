@@ -36,5 +36,6 @@ export const CardTitle = styled.h5`
 
 export const CardDescription = styled.p`
   color: #555;
+  max-width: 10rem;
 `;
 

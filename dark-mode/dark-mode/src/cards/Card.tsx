@@ -1,3 +1,4 @@
+
 import {CardBody, CardContainer, CardDescription, CardImage, CardTitle } from './StyledCard';
 
 interface CardProps {
@@ -16,6 +17,7 @@ const Card  = ({index, imageSrc, title, description} : CardProps) => {
             <CardDescription>{description}</CardDescription>
           </CardBody>
         </CardContainer>
+
     );
 };
 

@@ -9,6 +9,4 @@ export const StyledCards = styled(CardContent)`
     padding: 10px; 
     display: flex;
     flex-wrap: wrap;
-    background-color: ${(props) => (props.darkMode ? "black" : "white")};
-    color: ${(props) => (props.darkMode ? "white" : "black")};
 `;

@@ -1,32 +1,33 @@
 import Card from './Card';
 
 
-const CardContent = () => {
+const CardContent = ({ className }:{className:string}) => {
     const cards = [
         {
             title: 'AMD R7260X',
             imageSrc: './AMD_R7260X.jpg',
-            description: 'Placa de buena relación precio-calidad, de buena potencia',
+            description: 'Certainly! It seems like you re asking for a recommendation for a good price-to-performance ratio and powerful component',
         },
         {
             title: 'AMD R9280X',
             imageSrc: './AMD_R9280X.jpg',
-            description: 'Placa para los más exigentes',
+            description: 'Board for the most demanding users',
         },
         {
             title: 'AMD RX550',
             imageSrc: './AMD_RX550.jpg',
-            description: 'Placa básica para jugar.',
+            description: 'Basic board for gaming.',
         },
     ];
     return (
-        <div>
+        <div className={`${className} contenedor`}>
             {cards.map((item, index) => (
-              <Card title={item.title} 
-              imageSrc={item.imageSrc}
-              description={item.description} 
-              index = {index} />
-      ))}
+                <Card title={item.title}
+                    imageSrc={item.imageSrc}
+                    description={item.description}
+                    index={index} />
+            ))}
+
         </div>
     );
 };

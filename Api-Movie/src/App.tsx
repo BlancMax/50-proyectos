@@ -1,12 +1,12 @@
 import './App.css'
-import Movie from './Movie';
+import Movies from './Movies';
 
 function App() {
 
 
   return (
     <>
-      <Movie />
+      <Movies />
     </>
   )
 }
